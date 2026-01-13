@@ -7,10 +7,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-family-primary, Arial, sans-serif);
+  font-family: Arial, sans-serif;
   width: 100%;
-  background-color: var(--color-background, #FFFFFF);
-  color: var(--color-text-main, #1F2937);
+  background-color: white;
 }
 
 #root {
@@ -21,11 +20,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 16px 40px;
-  background: var(--color-primary, #0F7D5E);
-  color: var(--color-text-light, #FFFFFF);
+  background: #111;
+  color: white;
   position: sticky;
   top: 0;
-  box-shadow: var(--shadow-md);
 }
 
 .nav ul {
@@ -40,7 +38,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--color-surface-alt, #F3F4F6);
+  background: #f5f5f5;
 }
 
 .gallery {
@@ -50,5 +48,5 @@ body {
 .gallery img {
   width: 100%;
   margin-bottom: 30px;
-  border-radius: var(--radius-lg, 10px);
+  border-radius: 10px;
 }

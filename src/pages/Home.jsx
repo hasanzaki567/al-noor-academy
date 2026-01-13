@@ -1,19 +1,8 @@
 import './Home.css';
 import { useEffect, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
 
 function Home() {
-  const { isLoggedIn } = useAuth();
-  const navigate = useNavigate();
   const featuresRef = useRef(null);
-
-  // Redirect logged-in users to dashboard
-  useEffect(() => {
-    if (isLoggedIn) {
-      navigate('/dashboard', { replace: true });
-    }
-  }, [isLoggedIn, navigate]);
   const trustRef = useRef(null);
   const testimonialRef = useRef(null);
   const faqRef = useRef(null);
@@ -343,14 +332,7 @@ function Home() {
                 <div className="slide-glass">
                   <h2 className="slide-title">{slide.title}</h2>
                   <p className="slide-description">{slide.description}</p>
-                  <div className="hero-cta-group">
-                    <Link to="/signup" className="hero-cta-button signup-btn">
-                      <i className="fas fa-user-plus"></i> Sign Up
-                    </Link>
-                    <Link to="/login" className="hero-cta-button login-btn">
-                      <i className="fas fa-sign-in-alt"></i> Login
-                    </Link>
-                  </div>
+                  <button className="hero-cta-button">Start Your Free Trial</button>
                 </div>
               </div>
             </div>

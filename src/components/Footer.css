@@ -1,10 +1,10 @@
 /* Footer Styles */
 .footer {
-  background: var(--color-primary, #0F7D5E);
-  color: var(--color-text-light, white);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
   padding: 60px 20px 20px 20px;
   margin-top: 80px;
-  border-top: 4px solid var(--color-accent-gold, #D4AF37);
+  border-top: 4px solid #667eea;
 }
 
 .footer-container {
@@ -23,14 +23,13 @@
   font-size: 1.5rem;
   margin-bottom: 15px;
   font-weight: bold;
-  color: var(--color-text-light, white);
 }
 
 .footer-section h4 {
   font-size: 1.1rem;
   margin-bottom: 15px;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.95);
+  color: #f0f0f0;
 }
 
 .footer-section p {
@@ -38,7 +37,6 @@
   line-height: 1.6;
   opacity: 0.9;
   margin: 10px 0;
-  color: var(--color-text-light, white);
 }
 
 .footer-section ul {
@@ -52,14 +50,14 @@
 }
 
 .footer-section a {
-  color: rgba(255, 255, 255, 0.9);
+  color: #f0f0f0;
   text-decoration: none;
-  transition: all var(--transition-base);
+  transition: all 0.3s ease;
   font-size: 0.95rem;
 }
 
 .footer-section a:hover {
-  color: var(--color-accent-gold, #D4AF37);
+  color: white;
   padding-left: 5px;
 }
 
@@ -76,9 +74,9 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  color: var(--color-text-light, white);
+  color: white;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
